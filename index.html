@@ -1,28 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>Projeto final PdA</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+
 </head>
+
 <body>
 
-  <h2>QUIZ APP</h2>
-  <main>
-    <div class="content">
-      <span class="spnQtd"></span>
-      <span class="question"></span>
-      <div class="answers"></div>
-    </div>
-    <div class="finish">
-      <span></span>
-      <button>Reiniciar</button>
+  <main class="main">
+    <header class="header">
+      <a href="#" class="logo">Quiz</a>
+
+      <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contatos</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="quiz-section">
+        <div class="quiz-box">
+          <h1>Quiz</h1>
+          <div class="quiz-header">
+            <span>Quiz Tecnologia</span>
+            <span class="header-score">Score: 0 / 5</span>
+          </div>
+          <h2 class="question-text">1. Para que serve a tag head?</h2>
+          <div class="option-list">
+            <div class="option">
+              <span>A. Nomear um website</span>
+            </div>
+            <div class="option">
+              <span>B. Adicionar coisas na cabeça do site</span>
+            </div>
+            <div class="option">
+              <span>C. Definir idioma do site</span>
+            </div>
+            <div class="option">
+              <span>D. Titulo do site</span>
+            </div>
+          </div>
+          <div class="quiz-footer">
+            <span class="question-total">1 of 5 Questions</span>
+            <button class="next-btn">Next</button>
+          </div>
+        </div>
+
+        <div class="result-box">
+          <h2>Seu resultado é:</h2>
+          <div class="percentage-container">
+            <div class="circular-progress">
+              <span class="progress-value">0%</span>
+            </div>
+
+            <span class="score-text">Sua pontuação 0 de 5</span>
+          </div>
+
+          <div class="buttons">
+            <button class="tryAgain-btn">Tentar outra vez</button>
+            <button class="goHome-btn">Voltar ao inicio</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="home">
+        <div class="home-contet">
+          <h1>Quiz Website</h1>
+           <p></p>
+          <button class="start-btn">Start Quiz</button>
+        </div>
+
+      </section>
     </div>
   </main>
-  
-  <script src="script.js" type="module"></script>
+
+  <div class="popup-info">
+    <h2>Quiz Guide</h2>
+    <span class="info">1. Cada pergunta possui 4 alternativas, sendo 3 erradas e 1 correta.</span><br>
+    <span class="info">2. Se o usuário escolher a opção correta, ele avança de fase
+Ou se ele selecionar a opção errada, não ganha ponto.</span><br>
+    
+
+    <div class="btn-group">
+      <button class="info-btn exit-btn">Exit Quiz</button>
+      <a href="#" class="info-btn continue-btn">Continue</a>
+    </div>
+  </div>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
